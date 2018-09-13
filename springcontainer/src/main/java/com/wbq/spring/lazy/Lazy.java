@@ -48,4 +48,8 @@ public class Lazy<T> {
 	public static <T> Lazy<T> of(Supplier<T> supplier) {
 		return new Lazy<>(supplier);
 	}
+
+	public static void main(String[] args) {
+		System.out.println(Lazy.class.getSimpleName());
+	}
 }
